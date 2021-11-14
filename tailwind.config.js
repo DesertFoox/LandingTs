@@ -1,0 +1,82 @@
+module.exports = {
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    letterSpacing: {
+      widest: ".45em",
+      widest2: ".25em",
+    },
+    extend: {
+      zIndex: {
+        "-1": "-10",
+      },
+      width: {
+        1440: "1440px",
+        1536: "1536px",
+        88: "340px",
+        550: "550px",
+        500: "500px",
+        700: "690px",
+        slider: "1098px",
+        tiny: "2px",
+      },
+      height: {
+        tiny: "2px",
+        1300: "1300px",
+      },
+      backgroundImage: {
+        "bg-1": "url('/src/Assets/image/bg1.png')",
+        "bg-2": "url('/src/Assets/image/bg2.png')",
+        "bg-submit": "url('/src/Assets/image/submit.png')",
+        //"footer-texture": "url('/img/footer-texture.png')",
+      },
+    },
+    fontFamily: {
+      spartan: "spartan",
+      playfair: "playfair",
+      myriad: "myriad",
+      "myriad-lite": "myriad-lite",
+      poppins: "poppins",
+    },
+    fontSize: {
+      xtiny: "10px",
+      xs: ".75rem",
+      sm: ".875rem",
+      tiny: ".965rem",
+      base: "1rem",
+      "quote-size": "24pt",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
+      "8xl": "55px",
+      130: "130pt",
+    },
+    textColor: {
+      primary: "#3490dc",
+      secondary: "#3b3c3e",
+      third: "#dfdfdf",
+      danger: "#e3342f",
+      info: "#5da8ef",
+      "custom-gray": "#8f8f8f",
+      quote: "#333333",
+      poppins: "#7a7a7a",
+      pinc: "#ce60a8",
+      section: "#f9f9f9",
+    },
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      info: "#5da8ef",
+      input: "#f5f5f5",
+      submit: "#5da8ef",
+    }),
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
